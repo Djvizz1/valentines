@@ -2,7 +2,7 @@ var canvas = document.getElementById("starfield");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var context = canvas.getContext("2d");
+var context = canvas.getContext("2d", { willReadFrequently: true });
 var stars = 500;
 var colorrange = [0, 60, 240];
 var starArray = [];
